@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="Final Project" content="All covered in class ICT4510">
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+      <title>About</title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
+      <!--Make use of the Leaflet.js library to map the restaurant’s coordinates-->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+         crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+         crossorigin=""></script>
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Custom styles for this template -->
+      <link href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
+   </head>
+   <body class="d-flex flex-column h-100">
+      <header>
+         <!-- the navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-info p-0">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Ised's Restaurant Restaurant -->
+            <a class="navbar-brand" href="/"><img src="image/isedRestaurant.png" alt="Ised's Restaurant"></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target" aria-controls="collapse-target" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="collapse-target">
+               <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="menu.html">Menu </a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="about.html">About <span class="sr-only sr-only-focusable">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="dashboard.html">Login</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <div class="container">
+         <p class="address">
+            <!--Must contain the restaurant’s contact information, address and hours of operation. The address can be DU
+               (2150 East Evans Avenue Denver, CO 80208) and the hours can be 9:00am to 9:00pm.  -->
+            <label> <strong>Address: </strong></label>
+            <span>2150 East Evans Avenue Denver, CO 80208</span><br>
+            <label> <strong>Business Hours: </strong></label>
+            <span>9:00am to 9:00pm.</span></strong>
+         </p>
+         <div id="map"></div>
+      </div>
+      <!--Add the following text to the foote: University of Denver ICT4510 Final Project-->
+      <footer class="footer mt-auto py-4">
+         <div class="container">
+            <p>University of Denver ICT4510 Final Project</p>
+         </div>
+      </footer>
+      <script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
+      <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+      <script src="js/about.js"></script>
+   </body>
+</html>
